@@ -289,7 +289,7 @@ if (self !== top) {
 
 <script>
 $('#demo-video').on('show.bs.modal', function(e) {
-    $(this).find('.embed-responsive').html('<iframe class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/posciGtOQFY"></iframe>');
+    $(this).find('.embed-responsive').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/posciGtOQFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 }).on('hide.bs.modal', function(e) {
     $(this).find('.embed-responsive').empty();
 });
