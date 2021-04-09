@@ -14,51 +14,23 @@
 <meta name="twitter:player:width" content="435"/>
 <meta name="twitter:player:height" content="245"/>
 
-<style>
-  /*<![CDATA[*/
-    html, body {margin:0;padding:0;overflow:hidden;height:100%;}
-    object {border:0;}
-    #wistia_video {height:100%;width:100%;}
-    #wistia_fallback img {border:0;height:100%;vertical-align:top;width:100%;}
-  /*]]>*/
-</style>
-</head>
-<body>
-<div class="wistia_embed" id="wistia_video">
-<a href="/videos/file.mp4" id="wistia_fallback">
-<img alt="" src="/img/a31747aec98c7fa57e468cd3e5480beb76fb3989.jpg">
-</a>
-</div>
-<script>
-  //<![CDATA[
-    window._inWistiaIframe = true;
-    document.getElementById("wistia_fallback").style.display = "none";
-  //]]>
-</script>
-<script src="/assets/external/E-v1.js"></script>
-
-</body>
-</html>
-<!--
-     FILE ARCHIVED ON 23:55:31 Feb 04, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 21:22:55 Apr 09, 2021.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->
-<!--
-playback timings (ms):
-  CDXLines.iter: 28.988 (3)
-  load_resource: 131.076
-  exclusion.robots.policy: 149.19
-  esindex: 0.015
-  PetaboxLoader3.datanode: 45.751 (4)
-  exclusion.robots: 149.222
-  xauthn.identify: 76.279
-  captures_list: 212.977
-  RedisCDXSource: 0.698
-  xauthn.chkprivs: 72.452
-  PetaboxLoader3.resolve: 89.885
-  LoadShardBlock: 29.946 (3)
--->
+<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+	  </head>
+	  <body>
+		<iframe src="/videos/file.mp4"></iframe>
+	  </body>
+	</html>
