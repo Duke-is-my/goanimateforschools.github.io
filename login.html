@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="/favicon.ico" type="image/png">
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<link rel="dns-prefetch" href="//web.archive.org/web/20180213084210/https://d2qrjeyl4jwu9j.cloudfront.net/">
+<link rel="dns-prefetch" href="//web.archive.org/web/20150323093404/https://d2qrjeyl4jwu9j.cloudfront.net/">
 
 <title>Login - GoAnimate for Schools</title>
 
@@ -18,115 +18,41 @@
 
 
 <link rel="stylesheet" href="/fonts/schoolfont.css">
-<link rel="stylesheet" href="/css/common_combined.css.gz.css">
+<link rel="stylesheet" href="/css/common_combined._css">
 
-<link rel="stylesheet" href="/css/public/genericlogin.css.gz.css">
+<link rel="stylesheet" href="/css/public/genericlogin.css">
 
 <script>
-var srv_tz_os = -5, view_name = "school", user_cookie_name = "u_info_school";
+var srv_tz_os = -4, view_name = "school", user_cookie_name = "u_info_school";
 var user_country = "US";
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://d2qrjeyl4jwu9j.cloudfront.net/static/a58ff843b3f92207/go/js/lib/html5shiv.js.gz.js"></script>
+<script src="https://d2qrjeyl4jwu9j.cloudfront.net/static/c37213d825a55116/go/js/lib/html5shiv.js"></script>
 <![endif]-->
-<script src="/js/common_combined.js.gz.js"></script>
-<script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/477/go/po/goserver_js-en_US.json.gz.json"></script>
+<script src="/js/common_combined.js"></script>
+<script type="text/javascript" src="/js/./po/goserver_js-en_US.json"></script>
 <script type="text/javascript">
 var I18N_LANG = 'en_US';
 var GT = new Gettext({'locale_data': json_locale_data});
 </script>
 
-
-
+<!-- Google Analytics -->
 <script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2516970-15']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 
-        ga('create', 'UA-2516970-15');
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 
-        ga('send', 'pageview');
-
-ga('require', 'ecommerce');
-
-$(function() {
-    var COOKIE_LAST_URL_LIFETIME = 5,
-        COOKIE_BLOCKER_LIFETIME = 900;
-
-    function setSessionCookie(cookie_name, cookie_value, lifetime) {
-        document.cookie = cookie_name + '=' + escape(cookie_value) + '; path=/; max-age=' + lifetime + ';';
-    }
-    function getSessionCookie(cookie_name) {
-        var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
-        if (results) {
-            return (unescape(results[2]));
-        } else {
-            return null;
-        }
-    }
-
-    $(window).on({
-        unload: function() {
-            setSessionCookie('lasturl', window.location.href, COOKIE_LAST_URL_LIFETIME);
-        },
-        onbeforeunload: function() {
-            setSessionCookie('lasturl', window.location.href, COOKIE_LAST_URL_LIFETIME);
-        },
-        load: function() {
-            var http_referrer = document.referrer,
-                blocker = getSessionCookie('gasessid');
-
-            if (http_referrer === '') {
-                http_referrer = getSessionCookie('lasturl');
-            }
-            if ((http_referrer === '') || (blocker === null)) {
-                if (typeof(ga) !== 'undefined') {
-                    var currentDate = new Date(),
-                        sessionId,
-                        clientId;
-
-                    // Assume we only have one tracker
-                    try {
-                        var trackers = ga.getAll();
-                        var currentDate = new Date(),
-                            clientId = trackers[0].get('clientId'),
-                            sessionId = clientId + '.' + currentDate.getTime();
-                        // Set custom dimension (UniqueID).
-                        ga('set', 'dimension1', clientId);
-                        // Set custom dimension (Session ID).
-                        ga('set', 'dimension2', sessionId);
-                        // Set blocker.
-                        setSessionCookie('gasessid', sessionId, COOKIE_BLOCKER_LIFETIME);
-                    } catch(e) {}
-                }
-            }
-        }
-    });
-  });
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
 
-
-
-<!-- Google Knowledge Graph -->
-<script type="application/ld+json">
-{
-    "@context": "http://web.archive.org/web/20180213084210/http://schema.org",
-    "@type": "Organization",
-    "name": "GoAnimate",
-    "url": "http://web.archive.org/web/20180213084210/http://goanimate.com",
-    "logo": "http://web.archive.org/web/20180213084210/http://gawpstorage.s3.amazonaws.com/img/google_knowledge_graph_logo.jpg",
-    "sameAs": [
-        "http://web.archive.org/web/20180213084210/http://www.facebook.com/GoAnimateInc",
-        "http://web.archive.org/web/20180213084210/http://twitter.com/GoAnimate",
-        "http://web.archive.org/web/20180213084210/http://www.linkedin.com/company/goanimate",
-        "http://web.archive.org/web/20180213084210/http://plus.google.com/+goanimate",
-        "http://web.archive.org/web/20180213084210/http://www.youtube.com/user/GoAnimate"
-    ]
-}
-</script>
-
+<script type="text/javascript" src="https://josephcrosmanplays532.github.io/js/google/api/recaptcha/recaptcha_ajax.js"></script>
 </head>
 <script type="text/javascript">
 if (self !== top) {
@@ -155,7 +81,7 @@ if (self !== top) {
                 <li class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown">Learning Center <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/teaching-with-video/">Blog</a></li>
                         <li><a href="/public_faq">FAQ</a></li>
                         <li><a href="/hc/en-us">Help Center</a></li>
                     </ul>
@@ -163,8 +89,7 @@ if (self !== top) {
             </ul>
         </div>
     </div>
-</nav>
-<div class="container">
+</nav><div class="container">
     <div class="row header"><div class="col-sm-12"><h2>Visit Your Private GoAnimate for Schools Site to Log In</h2></div></div>
 
     <div id="reminder-notice-zone">
@@ -192,13 +117,15 @@ if (self !== top) {
         </div>
         <div class="col-sm-4">
             <div class="generic-login-google">
-                <div class="header">Having trouble signing up or loging in manualy?</div>
+                <div class="header">Using Chromebooks at school?</div>
                 <div class="body">
-                    <p>You should sign in or sign up using your Google account. i only put thoose singup/login codes there for a reason.</p>
+                    <p>You should sign in using your Google account.</p>
 
                     <p>Click the button below:</p>
 
-                    <a class="btn btn-white google-login" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fgoanimateforschools.github.io%2Fdashboard%2Fvideos%3Fid%3Dauth816568&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&client_id=821216736618-u2g9olks9fnjtgjtaipjjk4gan5eh9oa.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fgoanimateforschools.github.io&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"></a>
+                    <p><a class="btn btn-white google-login" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fgoanimateforschools.github.io%3Fid%3Dauth57862&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&client_id=821216736618-u2g9olks9fnjtgjtaipjjk4gan5eh9oa.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fgoanimateforschools.github.io&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"></a></p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -215,7 +142,7 @@ if (self !== top) {
                         Not sure about your school login URL? Receive a reminder by email.                        Simply input your email address and press "Get Reminder"                    </div>
 
                     <form class="form-inline" id="reminderform" onsubmit="sendReminder(); return false;" role="form">
-                    <input type="hidden" name="ct" value="hCTcEVwA4pzvH8wL96bSLwZmy_kEVhqPESMFTK_0XH1V48TKZ2NZ9M_HrwPZEZhMrlOACjftsrMesMd4JHkXvIX8JEfjzbouR6hRrbiN7LS+lZiFj8hkkGGUaI5hqMSpmPwr1QqKhfv7HB56BaOwU1nu9nTpY00mSu8G5v04rF1zmmfVuQaPN20Vtv9+ZibG01yOqrf6D3h8zJivHpCZv2Ny4xq7eJaf16cz7pGcUq+KU0QUaDRTmPGzqpE+HV"/>
+                    <input type="hidden" name="ct" value="oi31bHMHpTp9DbGKtdr67w9OK4obS0yhHUzHLtTTmyBLle5yMInVNSx9awDIRHUMP5FR_9iwHrzJC0KomajCnlr42DcpZzLFa0hor9XhIkF8gD37Ng5k5d+4eCPtIrEKnmbkUEk2jBvhOmd0gQTpcj+OeCGApNk9EyM8KTNjtNLOHWkNWz1CRy16AcuL7KJVErGq0JkSaHxcpc0hoUa_7VXtsfOM_q0S+O8rdVI6WdEaK2wRziqsgcJxALHzWR"/>
                         <div class="form-group col-sm-4 reminder-input">
                             <label class="sr-only" for="admin_email">Email address</label>
                             <input class="form-control" type="email" name="admin_email" id="admin_email" maxlength="255" placeholder="Email Address">
@@ -348,7 +275,7 @@ if (self !== top) {
                 <div class="site-footer-nav-col">
                     <h5>Getting Help</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/blog">Educator Experiences</a></li>
+                        <li><a href="/teaching-with-video/">Educator Experiences</a></li>
                         <li><a href="/hc/en-us">Help Center</a></li>
                         <li class="hidden-xs">&nbsp;</li>
                         <li class="hidden-xs">&nbsp;</li>
@@ -372,6 +299,7 @@ if (self !== top) {
             </div>
             <div class="col-sm-6">
                 <div class="pull-right">
+                    <img src="/img/site/logo_norton.png" alt="Norton Secured"/>
                     <img src="https://josephcrosmanplays532.github.io/static/477/go/img/footer/logo_amazon.png" alt="AWS Partner Network"/>
                     &nbsp;&nbsp;&nbsp;
                     GoAnimate Revival &copy; 2021
@@ -386,7 +314,7 @@ if (self !== top) {
 <div id="studio_container" style="display: none;">
     <div id="studio_holder"><!-- Full Screen Studio -->
         <div style="top: 50%; position: relative;">
-            You can't use GoAnimate because Flash might be disabled. <a href="https://get.adobe.com/flashplayer/">Enable Flash</a>.
+            This content requires the Adobe Flash Player 10.3. <a href="http://get.adobe.com/flashplayer/">Get Flash</a>
         </div>
     </div>
 </div>
@@ -396,34 +324,17 @@ if (self !== top) {
     (function(d,s,i,r) {
       if (d.getElementById(i)){return;}
       var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-      n.id=i;n.src='//web.archive.org/web/20180213084210/https://js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/491659.js';
+      n.id=i;n.src='//web.archive.org/web/20150323093404/https://js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/491659.js';
       e.parentNode.insertBefore(n, e);
     })(document,"script","hs-analytics",300000);
   </script>
 <!-- End of Async HubSpot Analytics Code -->
 
-<!-- SharpSpring begin -->
-<script type="text/javascript">
-var _ss = _ss || [];
-_ss.push(['_setDomain', 'https://koi-3q6b8sg59e.marketingautomation.services/net']);
-_ss.push(['_setAccount', 'KOI-1OTR0IV8I']);
-_ss.push(['_trackPageView']);
-(function() {
-    var ss = document.createElement('script');
-    ss.type = 'text/javascript'; ss.async = true;
-
-    ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3Q6B8SG59E.marketingautomation.services/client/ss.js?ver=1.1.1';
-    var scr = document.getElementsByTagName('script')[0];
-    scr.parentNode.insertBefore(ss, scr);
-})();
-</script>
-<!-- SharpSpring end -->
-
 </body>
 </html>
 <!--
-     FILE ARCHIVED ON 08:42:10 Feb 13, 2018 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:15:08 Apr 10, 2021.
+     FILE ARCHIVED ON 09:34:04 Mar 23, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:53:19 Apr 24, 2021.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -431,16 +342,16 @@ _ss.push(['_trackPageView']);
 -->
 <!--
 playback timings (ms):
-  PetaboxLoader3.datanode: 146.232 (4)
-  LoadShardBlock: 153.269 (3)
-  xauthn.identify: 107.289
-  RedisCDXSource: 958.815
-  esindex: 0.011
-  PetaboxLoader3.resolve: 27.173
-  exclusion.robots.policy: 157.599
-  exclusion.robots: 157.611
-  captures_list: 1296.731
-  xauthn.chkprivs: 49.812
-  load_resource: 97.294
-  CDXLines.iter: 20.884 (3)
+  exclusion.robots: 413.035
+  CDXLines.iter: 17.18 (3)
+  LoadShardBlock: 755.31 (3)
+  esindex: 0.012
+  PetaboxLoader3.resolve: 26.184
+  load_resource: 69.37
+  xauthn.identify: 139.802
+  captures_list: 1193.327
+  exclusion.robots.policy: 413.023
+  PetaboxLoader3.datanode: 764.141 (4)
+  RedisCDXSource: 4.175
+  xauthn.chkprivs: 272.897
 -->
